@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Details</title>
+</head>
+<body>
+    <h1>User Details</h1>
+    <ul>
+        {% for user in users %}
+        <li>Username: {{ user.username }}</li>
+        <li>Email: {{ user.email }}</li>
+        <li>Bio: {{ user.bio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
